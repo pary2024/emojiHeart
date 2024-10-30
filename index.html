@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .child{
+            position: relative;
+            height: 400px;
+            width: 400px;
+            background-color: pink;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 2px solid gray;
+            border-radius: 10px;
+            gap: 20px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-image: url('https://media.tenor.com/Gj7mlQDKYqAAAAAM/white-cat-grey-cat.gif');
+        }
+        .btn1{
+            position: absolute;
+            height: 30px;
+            width: 100px;
+            border-radius: 20px;
+            bottom: -35px;
+            margin-left: -100px;
+        }
+        .btn1{
+            background-color: red;
+            color: wheat;
+            transition: all 0.5s;
+        }
+        .btn1:hover{
+            background-color:white;
+            color: black;
+        }
+        .child h1{
+            position: absolute;
+            top: -50px;
+            color: red;
+            font-size: 20px;
+        }
+        .btn2{
+            position: absolute;
+            height: 30px;
+            width: 100px;
+            border-radius: 20px;
+            bottom: -35px;
+            background-color: blue;
+            color: white;
+            margin-right: -100px;
+            transition: all 0.5s;
+        }
+        .btn2:hover{
+            background-color: white;
+            color: black;
+        }
+        .content{
+            height: 400px;
+            width: 400px;
+            background-image: url('https://i.pinimg.com/originals/4a/db/c5/4adbc5f251620f46dd851435371533ec.gif') ;
+            border-radius: 10px;
+            border: 2px solid gray;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .parent{
+            height: 400px;
+            width: 400px;
+            background-image:url('https://i.pinimg.com/originals/67/5d/aa/675daa5c96e23bb7e2b5b06ef804cb81.gif');
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="child">
+        <h1>DO YOU LOVE ME?CHIOCE</h1>
+        <button class="btn1" draggable="true">Yes</button>
+        <button class="btn2">No</button>
+    </div>
+</body>
+<script src="index.js"></script>
+</html>
