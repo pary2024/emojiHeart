@@ -69,6 +69,20 @@ btn1.addEventListener('click', () => {
     };
 });
 
+
+function moveButton() {
+    const viewportWidth = window.innerWidth;
+    const viewportHeight = window.innerHeight;
+    
+    const randomX = Math.floor(Math.random() * (viewportWidth - btn2.offsetWidth));
+    const randomY = Math.floor(Math.random() * (viewportHeight - btn2.offsetHeight));
+    
+    btn2.style.position = 'absolute';
+    btn2.style.left = `${randomX}px`;
+    btn2.style.top = `${randomY}px`;
+}
+
+btn2.addEventListener('mouseover', moveButton);
 btn2.addEventListener('click', () => {
     if (isClicked) return; // Prevent further actions if already clicked
     isClicked = true; // Set flag to true on click
@@ -79,5 +93,10 @@ btn2.addEventListener('click', () => {
     btn2.style.color = '#432818';
     btn2.style.textShadow = '2px 2px 2px red';
     btn2.style.transition = '0.5s';
+
+    
 });
+
+
+
 
